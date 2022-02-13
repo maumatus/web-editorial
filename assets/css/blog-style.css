@@ -1,0 +1,506 @@
+/* Codigo principal Body*/
+
+html, body  { 
+    background-color: #f8f8f8;
+    margin: 0;
+    width: 100;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  color: black;
+  font-weight:300;
+}
+
+/* Reglas de estilo para barra de navegación superior - Nav */
+
+header {
+    text-decoration: none;
+    padding-top: 1.5rem;
+    padding-bottom: .1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    margin: 0rem;
+    width: 100%;
+    height: 8vh;
+    background-color:rgb(97, 4, 95);
+    
+}
+
+
+/* CSS links, estilo y color */
+
+a { 
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    width: auto;
+}
+
+/* CSS reglas para logo y base Navbar */
+
+.logo {
+    width: auto;
+    height: 2.2rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-top: -0.1rem;
+}
+
+/* Final codigo estilo de logo */
+  
+.menu-editorial {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    justify-content: space-around;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0rem;   
+}
+
+#link-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+}
+
+/* Seccion libros - estilo y animación estado Hover */
+
+#libros {
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding-right: 1rem;
+}
+
+#libros:hover {
+    padding-top: 0.2rem;
+}
+.submenu-libros{
+    padding-right: 0.5rem;
+    padding-left:0.5rem;
+    list-style-type: none;
+    margin-left: 0rem;
+    margin-top: 0rem;
+   
+}
+
+#libros .submenu-libros {
+    visibility: hidden;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.submenu-libros a {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+}
+
+#libros:hover > .submenu-libros {
+    visibility: visible;
+    background-color: rgb(245, 237, 89);
+}
+
+#libros ul li a:hover {
+    color:rgb(199, 88, 60);
+    font-size: 1rem;
+    background: rgb(211, 180, 115);
+}
+
+/* Final reglas para desplegable Libros */
+/* Editorial reglas de estilo CSS */
+
+#estudio {
+    margin-right: 0rem;
+    margin-left: -1rem;
+    padding-left: 0;
+}
+
+#estudio:hover {
+    padding-top: 0.2rem;
+}
+.submenu-estudio{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    list-style-type: none;
+    margin-left: 0rem;
+    margin-top: 0rem;  
+}
+
+#estudio .submenu-estudio {
+    visibility: hidden;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+.submenu-estudio a {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+}
+
+#estudio:hover > .submenu-estudio {
+    visibility: visible;
+    background-color: rgb(245, 237, 89);
+}
+
+#estudio ul li a:hover {
+    color:rgb(199, 88, 60);
+    font-size: 1rem;
+    background: rgb(211, 180, 115);
+}
+
+/* Final codigo desplegable Editorial*/
+
+/* Reglas de estilo sección nosotros */ 
+
+#nosotros {
+    margin-right: 1rem;
+    margin-left: 0rem;
+    padding-right: 0.5;
+}
+
+#nosotros:hover {
+    padding-top: 0.2rem;
+}
+.submenu-nosotros{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    list-style-type: none;
+    margin-left: 0rem;
+    margin-top: 0rem;
+   
+}
+
+#nosotros .submenu-nosotros {
+    visibility: hidden;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+.submenu-nosotros a {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+}
+
+#nosotros:hover > .submenu-nosotros {
+    visibility: visible;
+    background-color: rgb(245, 237, 89);
+}
+
+#nosotros ul li a:hover {
+    color:rgb(199, 88, 60);
+    font-size: 1rem;
+    background: rgb(211, 180, 115);
+}
+
+/* Final del codigo de sección nosotros */
+/* Código sección actividades */
+
+#actividades {
+    margin-right: 0rem;
+    margin-left: -1rem;
+}
+
+#actividades:hover {
+    padding-top: 0.2rem;
+}
+.submenu-actividades {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    list-style-type: none;
+    margin-left: 0rem;
+    margin-top: 0rem;   
+}
+
+#actividades .submenu-actividades {
+    visibility: hidden;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+.submenu-actividades a {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+}
+
+#actividades:hover > .submenu-actividades {
+    visibility: visible;
+    background-color: rgb(245, 237, 89);
+}
+
+#actividades ul li a:hover {
+    color:rgb(199, 88, 60);
+    font-size: 1rem;
+    background: rgb(211, 180, 115);
+}
+
+/* Final codigo sección actividades */
+/* Codigo sección contacto */
+
+#contacto {
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#contacto:hover {
+    padding-top: 0.2rem;
+}
+
+/* Final reglas seccion contacto */
+
+/* Codigo reglas estilo Menú Hamburguesa, este ícono tiene un codigo JS simple asociado*/
+
+#icon {
+    margin-right: 2rem;
+    margin-left: -1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+#icon:hover {
+    padding-top: 0.2rem;
+}
+
+
+/* Final del código de icono menú hamburguesa */
+/* Aqui comienza el codigo con reglas principales para el blog */
+/* El codigo CSS es el mismo que el de frontpage, aqui en el body comienza codigo que es distinto, para formatear las entradas del blog */
+/*---------------------------------------------------------------------*/
+.blog-contenedor{
+    margin: -1rem;
+    padding: 4rem;
+    background: rgb(207, 207, 207);
+}
+.blog-cl{
+    margin: 0;
+    padding: 1rem;
+    background: white;
+}
+.imagen-blog{
+    width: 100%;
+    height: auto;
+}
+
+#titulo-principal-blog{
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.titulo-blog{
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+/* Codigo con reglas para el cuerpo del blog */
+
+
+
+/* Reglas de sección footer del blog. Codigo base de Scanfcode, pero lo modifique para no usar Bootstrap */
+.about-footer.categorias-footer.quicklinks-footer{
+    display: flex;
+    flex-direction: row;
+}
+.about-footer{
+    padding: 1rem;
+    padding-right: 0.1rem;
+    padding-left: 0.5rem;
+    flex-grow: .5;
+}
+.categorias-footer{
+    padding: 1rem;
+    flex-grow: 1;
+    padding-right: 2rem;
+}
+.quicklinks-footer{
+    padding: 1rem;
+    flex-grow: 1;
+    padding-right: 2rem;
+}
+
+/* Reglas luego de linea HR. RRSS y derechos reservados */
+.copyright-footer{
+    align-content: left;
+    display: flex;
+}
+.iconos-footer{
+    align-content: right;
+    display: flex;
+}
+.row {
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+/* Regla para color base footer */
+
+.site-footer
+{
+  background-color:rgb(97, 4, 95);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+/* Codigo footer */

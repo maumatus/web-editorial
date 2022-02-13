@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        <!--Aqui esta el link de la tipografía-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--Aqui van las reglas de estilo CSS que programó Mau-->
+        <link rel="stylesheet" href="assets/css/styles.css"/>
+        
+        <title>Editorial Cangrejo-Leon</title>
+
+    </head>
+
+    <body>
+        <!--Header con  Nav - toggle en Vanilla JS. Resto de funcionalidad son acciones/animaciones de CSS-->
+        <header>
+            <nav class="menu-editorial">
+
+                <img src="assets/img/Logo-CLV07.png"  i class="logo">
+
+                <nav id="link-menu">
+
+                    <li id="libros"><a href="#">Libros</a>
+                        <ul class="submenu-libros">
+                            <li><a href="#">Poesía</a></li>
+                            <li><a href="#">Ficción</a></li>
+                            <li><a href="#">No Ficción</a></li>
+                            <li><a href="#">Ilustrados</a></li>
+                            <li><a href="#">Híbridos</a></li>
+                            <li><a href="#">etc</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="estudio"><a href="#">Editorial</a>
+                        <ul class="submenu-estudio">
+                            <li><a href="#">Lugar</a></li>
+                            <li><a href="#">Ideas</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="nosotros"><a href="#">Nosotros</a>
+                        <ul class="submenu-nosotros">
+                            <li><a href="#">¿Quienes</a></li>
+                            <li><a href="#">somos?</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="actividades"><a href="#">Actividades</a>
+                        <ul class="submenu-actividades">
+                            <li><a href="#">Lanzam.</a></li>
+                            <li><a href="#">Ferias</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li id="contacto"><a href="#">Contacto</a></li>
+
+                </nav>
+
+                    <a href="javascript:void(0);" id="icon" onclick="toggleNav();">
+
+                        <i class="fa fa-bars"></i>
+
+                    </a>
+
+            </nav>
+
+        </header>
+        <!--Fin seccion nav-->
+
+        <main>
+
+            <section class="new-book">
+
+                <div class="texto-hero">
+
+                    <a href="#" class="boton-hero" role="button">Colección: Lorca Caleidoscopico</a>
+                    
+                </div>
+
+            </section>
+
+            <hr class="linea-segmentada-libros">
+
+            <section class="books">
+
+                <h3>NUEVOS LIBROS</h3>
+
+                <li class="libro01" >
+                    <h2>Canciones</h2>
+                    <p> Federico García Lorca, somos fans del gran poeta Andaluz. Elegimos su poemario "Canciones - 1935". De aquí ilustramos 3 poemas
+                        y creamos esta mini colección-acordeón.
+                        Niñas y niños de 6-7 años.
+                    </p>
+                    <a href="#">
+                        <img src="assets/img/port-chica-agosto.jpg" link="#" id="portlibro1" alt="portada-album-poema-agosto" onmouseover="hoverPrimero();" onmouseout="unhoverPrimero();" />
+                    </a>
+                </li>
+
+                <li class="libro02">
+                    <h2>MicroRanco</h2>
+                    <p> La comuna de Lago Ranco se encuentra dentro del territorio Bosque Valdiviano, ecosistema rico
+                        en especies pero desconocido. En este libro conoceremos algunas de las más pequeñas y desconocidas, los invertebrados.
+                        Niñas y niños de 8-10 años.
+                    </p>
+                    <a href="#">
+                        <img src="assets/img/port-chica-microranco.jpg" link="#" id="portlibro2" alt="portada-album-microranco" onmouseover="hoverSegundo();" onmouseout="unhoverSegundo();" />
+                    </a>
+                </li>
+
+                <li class="libro03">
+                    <h2>MicroRanco</h2>
+                    <p> La comuna de Lago Ranco se encuentra dentro del territorio Bosque Valdiviano, ecosistema rico
+                        en especies pero desconocido. En este libro conoceremos algunas de las más pequeñas y desconocidas, los invertebrados.
+                        Niñas y niños de 8-10 años.
+                    </p>
+                    <a href="#">
+                        <img src="assets/img/port-chica-microranco.png" link="#" id="portlibro3" alt="portada-album-microranco" onmouseover="hoverTercero();" onmouseout="unhoverTercero();" />
+                    </a>
+                </div>
+
+            </section>
+
+            <hr class="linea-segmentada-blog">
+
+            <section class="blog">
+
+                <h3>BLOG</h3>
+                
+
+                <p>Hay ideas, sentimientos y anhelos que nos motivan a dar inicio al desarrollo de uno o más libros,
+                    también hay mucho trabajo que no siempre se percibe cuando uno tiene una obra en las manos.
+                    Para mostrar eso y algunas otras cosas más hicimos esta parte del backstage del arte de hacer libros.
+                </p>
+
+            </section>
+
+            <section class="separador-newsletter">
+
+                <hr class="linea-segmentada-newsletter">
+
+            </section>
+
+            <section class="user-contact-info">
+
+                <h2>Newsletter</h2>
+
+                <h3>Si quieres recibir noticias , tenemos un Newsletter Bimensual:</h3>
+
+                <form class="suscripcion-newsletter">
+
+                    <div class="ingresar-datos-newsletter">
+                        <form action="">
+                        <input type="email" name="email" class="escribirCasilla" placeholder="Email" required />
+                        <a href="#" class="botonEnviar">Enviar</a>
+                        </form>
+                    </div>
+
+                </form>
+
+            </section>
+        </main>
+
+        <!-- Footer genérico usado en todas la páginas, desde frontpage hasta las interiores -->
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+            <div class="row">
+                <div class="about-footer">
+                    <h6>Nosotros</h6>
+                    <p class="texto-nosotros">Cangrejo-Leon</i> es una micro-editorial, en donde queremos hacer libros que puedan
+                    aportar nuevas perspectivas a lo que se esta haciendo. Tenemos como valor la diversidad humana y editorial,
+                    y el valor de las historias, la poesía y las ideas. Grandes y chicos, un libro para niños debe ser tan bueno
+                    como para que tenga valor al leerlo un adulto.</p>
+                </div>
+
+                <div class="categorias-footer">
+                <h6>Categorias</h6>
+                <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/category/c-language/">Libros</a></li>
+                    <li><a href="http://scanfcode.com/category/front-end-development/">Editorial</a></li>
+                    <li><a href="http://scanfcode.com/category/back-end-development/">Nosotros</a></li>
+                    <li><a href="http://scanfcode.com/category/java-programming-language/">Actividades</a></li>
+                    <li><a href="http://scanfcode.com/category/android/">Contacto</a></li>
+                </ul>
+                </div>
+
+                <div class="seccion-footer">
+                <h6>Seccion</h6>
+                <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/about/">Lanzamientos</a></li>
+                    <li><a href="http://scanfcode.com/contact/">Colección</a></li>
+                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Blog</a></li>
+                    <li><a href="http://scanfcode.com/privacy-policy/">Newsletter</a></li>
+                </ul>
+                </div>
+            </div>
+            <hr>
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="copyright-footer">
+                <p class="copyright-text">Derechos Reservados &copy; 2020,
+            <a href="#">www.mau.cl</a>.
+                </p>
+                </div>
+
+                <div class="iconos-footer">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+        <!--Aqui estan los scripts JS-->
+
+        <script src="assets/js/scripts.js"></script>
+       
+
+    </body>
+
+</html>
